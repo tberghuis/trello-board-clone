@@ -1,0 +1,37 @@
+{
+  "name": "trello-board-clone",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "localforage": "^1.7.3",
+    "react": "^16.10.2",
+    "react-beautiful-dnd": "^11.0.5",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "rxjs": "^6.5.3",
+    "styled-components": "^4.4.0",
+    "styled-reset": "^4.0.2",
+    "uuidv4": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

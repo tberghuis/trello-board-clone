@@ -1,0 +1,35 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: trellicons;
+  src: url("https://a.trellocdn.com/prgb/dist/fonts/trellicons.01f4873da4f2b2c57352.eot#iefix")
+      format("embedded-opentype"),
+    url("https://a.trellocdn.com/prgb/dist/fonts/trellicons.f95b53426037fc215170.ttf")
+      format("truetype"),
+    url("https://a.trellocdn.com/prgb/dist/fonts/trellicons.c914986d44ff5c34e6f8.woff")
+      format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.trellicons {
+  font-family: trellicons;
+}
+
+body {
+  background-color: #0079bf;
+}

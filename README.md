@@ -15,7 +15,7 @@ This project was created to gain experience and demonstrate my skills working wi
 - [ ] ...
 
 
-summary how it works
+TODO summary how it works
 
 ## Libraries used
 react, react-beautiful-dnd, styled-components, localforage, rxjs

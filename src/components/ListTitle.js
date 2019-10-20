@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import AutoSizeTextArea from "./AutoSizeTextArea";
 import { updateListTitle, deleteList } from "../state/boardData";

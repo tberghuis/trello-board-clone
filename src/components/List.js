@@ -70,12 +70,8 @@ const ListContent = styled.div`
   border-radius: 3px;
 `;
 
-// TODO calc min-height, current height + line height
-// or I could just copy exact functionality of trello
 const ListDroppable = styled.div`
   min-height: 50px;
-  /* background-color: pink; */
-
   margin: 0 4px;
   padding: 0 4px;
 `;

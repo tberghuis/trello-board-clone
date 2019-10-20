@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
-// do I need onBlur
 const AutoSizeTextArea = ({
   placeholder,
   editMode,
@@ -67,7 +66,6 @@ const TextArea = styled.textarea`
   resize: none;
   border-radius: 3px;
   width: 100%;
-  /* font-weight: 600; */
   background: transparent;
   &:focus {
     background: white;

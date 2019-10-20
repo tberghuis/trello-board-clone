@@ -40,8 +40,6 @@ export default AddCard;
 
 const Link = styled.div`
   cursor: pointer;
-  /* TODO isDraggingOver */
-  /* pointer-events: none; */
   padding: 8px;
   &:hover span:last-child {
     text-decoration: underline;

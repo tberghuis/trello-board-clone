@@ -43,11 +43,7 @@ const Board = () => {
           <BoardContainer ref={provided.innerRef} {...provided.droppableProps}>
             {listIds.map(id => {
               return (
-                <List
-                  key={id}
-                  listId={id}
-                  listData={boardData[id]}
-                ></List>
+                <List key={id} listId={id} listData={boardData[id]}></List>
               );
             })}
             {provided.placeholder}
@@ -67,8 +63,7 @@ const BoardContainer = styled.div`
   display: flex;
 `;
 
-const onDragStart = tmp => {
-};
+const onDragStart = tmp => {};
 
 const onDragEnd = result => {
   // dropped nowhere

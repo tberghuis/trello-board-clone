@@ -82,19 +82,3 @@ const TextAreaWrapper = styled.div`
     font-weight: 600;
   }
 `;
-
-// const TextArea = styled.textarea`
-//   height: auto;
-//   overflow-y: hidden;
-//   margin: -4px 0;
-//   padding: 4px 8px;
-//   border: none;
-//   resize: none;
-//   border-radius: 3px;
-//   width: 100%;
-//   font-weight: 600;
-//   background: transparent;
-//   &:focus {
-//     background: white;
-//   }
-// `;

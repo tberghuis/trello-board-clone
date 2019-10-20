@@ -76,9 +76,6 @@ const Wrapper = styled.div`
     props.compose ? "#ebecf0" : "hsla(0, 0%, 100%, 0.24)"};
   color: #fff;
   &:hover {
-    /* background-color: ${props =>
-      props.compose ? "#ebecf0" : "hsla(0, 0%, 100%, 0.32)"}; */
-
     /* alternative to ternary */
     background-color: hsla(0, 0%, 100%, 0.32);
     ${props => props.compose && "background-color: #ebecf0;"}

@@ -1,27 +1,21 @@
 import localforage from "localforage";
 import { boardDataSubject } from "./state/boardData";
-import uuid from "uuidv4";
 
 boardDataSubject.subscribe(boardData => {
   localforage.setItem("boardData", boardData);
 });
 
-localforage
-  .getItem("boardData")
-  .then(function(boardData) {
-    // console.log("localforage then", boardData);
-
-    // first time run, populate board with default data
-    if (boardData === null) {
-      boardDataSubject.next(defaultBoardData);
-      return;
-    }
-
-    boardDataSubject.next(boardData);
-  })
-  .catch(function(err) {
-    console.log("localforage catch", err);
-  });
+localforage.getItem("boardData").then(function(boardData) {
+  // first time run, populate board with default data
+  if (boardData === null) {
+    boardDataSubject.next(defaultBoardData);
+    return;
+  }
+  boardDataSubject.next(boardData);
+});
+// .catch(function(err) {
+//   console.log("localforage catch", err);
+// });
 
 const defaultBoardData = {
   "5cac8c9e-f91b-438a-9e18-00cea4667ee3": {

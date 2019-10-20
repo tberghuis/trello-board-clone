@@ -25,9 +25,7 @@ const Board = () => {
   }
 
   const onBeforeDragStart = tmp => {
-    console.log("onBeforeDragStart");
     if (document.activeElement.tagName.toUpperCase() === "TEXTAREA") {
-      console.log("here");
       document.activeElement.blur();
     }
   };
@@ -70,13 +68,9 @@ const BoardContainer = styled.div`
 `;
 
 const onDragStart = tmp => {
-  // console.log("TCL: onDragStart -> tmp", tmp);
 };
 
 const onDragEnd = result => {
-  console.log("TCL: result", result);
-  // TODO: reorder our column
-
   // dropped nowhere
   if (!result.destination) {
     return;

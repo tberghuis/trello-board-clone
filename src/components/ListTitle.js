@@ -10,8 +10,6 @@ const ListTitle = ({ setDragBlocking, dragHandleProps, listId, title }) => {
   const [updateValue, setUpdateValue] = useState(title);
 
   const onSave = _title => {
-    console.log("_title", _title);
-
     if (_title.trim() === "") {
       // this is hack, prevent user accidently deleting title
       setUpdateValue("");
@@ -23,19 +21,13 @@ const ListTitle = ({ setDragBlocking, dragHandleProps, listId, title }) => {
     setDragBlocking(false);
     setEditMode(false);
   };
-  // const onBlur = _title => {
-  //   console.log("blur");
-  //   updateListTitle(listId, _title);
-  // };
 
   const titleClick = () => {
-    console.log("click");
     setDragBlocking(true);
     setEditMode(true);
   };
 
   const deleteClick = () => {
-    console.log("delete click");
     deleteList(listId);
   };
 

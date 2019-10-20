@@ -12,10 +12,11 @@ This project was created to gain experience and demonstrate my skills working wi
 - [x] Auto sizing textareas
 - [x] Drag and drop lists and cards
 - [x] Autosave and load from browser storage
-- [ ] ...
+- [x] CRUD lists and cards
 
-
-TODO summary how it works
+## Implementation
+App state is represented by single object `boardData`. Each state change to boardData will be emitted by rxjs Subject `boardDataSubject`. The `Board` react component uses hooks setState and useEffect to subscribe to boardData changes which it then passes to child react components through props.
+App state is persisted in browser storage using library localForage.
 
 ## Libraries used
 react, react-beautiful-dnd, styled-components, localforage, rxjs
